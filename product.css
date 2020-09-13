@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.brand{
+    width: 15%;
+}
+.container{
+    display: flex;
+}
+.navigation{
+    background-color: aliceblue;
+    position: fixed;
+}
+.item{
+    font-size:20px
+}
+
+.items{
+    width: 30%;
+    justify-content: space-evenly;
+}
+.email{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+.services{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.service{
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+}
+body{
+    height: 2000px;
+}
+.temp{
+    display: flex;
+
+}
+#pricing{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+.level{
+    background-color: rgb(238, 238, 238);
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.product{
+    width: 100%;
+    margin:2%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.product h2{
+    margin-top: 10px;
+}
+.product ol{
+    margin: 10px 0;
+}
+li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+#em{
+    margin: 10px;
+    padding: 5px;
+}
+.btn{
+    margin: 10px;
+    background-color: goldenrod;
+    text-transform: uppercase;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 300px;
+    color:green;
+}
+#video{
+    margin-top: 40px;
+    max-width: 560px;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 960px;
+    padding:  20px;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.footer ul li{
+    padding: 0 10px;
+}
+.footer span{
+    text-align: end;
+}
