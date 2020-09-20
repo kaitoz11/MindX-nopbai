@@ -1,0 +1,61 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.header{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container{
+    background-image: url('img/survey-form-background.jpeg');
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px;
+}
+.survey-form{
+    width: 40%;
+    height: 1500px;
+    display: block;
+    margin:auto;
+    border-radius: 3px;
+    background-color: rgb(16, 20, 80);
+}
+.fgroups{
+    display: block;
+    width: 80%;
+    margin:auto;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+label{
+    display: inherit;
+    padding: 10px 0;
+}
+input{
+    display: inherit
+}
+.non-block{
+    display: inline;
+}
+input[type="text"]{
+    padding:10px;
+    font-size: 15px;
+    width: 95%;
+    border-radius: 3px;
+}
+textarea{
+    width: 100%;
+    border-radius: 3px;
+}
+.buttt{
+    height:40px;
+    width: 100%;
+    margin:0px;
+    background-color: rgb(12, 112, 12);
+    color: aliceblue;
+    border-radius: 3px;
+}
