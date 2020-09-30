@@ -134,5 +134,26 @@ function reverseCase(s){
 
 //bai 10
 function findLongestWordLength(str){
+    let temp="";
+    let result="";
+    for(let i=0;i<str.length;i++){
+        if(str[i]==" "){
+            if(temp.length>result.length){
+                result = temp;
+            }
+            temp="";
+        }else{
+            temp+=str[i];
+        }
+    }
+    return result.length+" - "+result
+}
+
+//bai 11
+//"dqwoqADSDWQjiw&dqwdq*wqe^@#!dsdq".replace(/[^a-z0-9]|\s+|\r?\n|\r/gmi, "");
+function palindrome(str){
+    str=str.replace(/[^a-z0-9A-Z]/g,"");
     
 }
+
+
