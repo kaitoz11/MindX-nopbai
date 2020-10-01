@@ -152,8 +152,12 @@ function findLongestWordLength(str){
 //bai 11
 //"dqwoqADSDWQjiw&dqwdq*wqe^@#!dsdq".replace(/[^a-z0-9]|\s+|\r?\n|\r/gmi, "");
 function palindrome(str){
-    str=str.replace(/[^a-z0-9A-Z]/g,"");
-    
+    str=str.replace(/[^a-z0-9A-Z]/g,"").toUpperCase();
+    let s="";
+    for(let i=0;i<str.length;i++){
+        s+=str[str.length-i-1];
+    }
+    return str == s
 }
 
 
