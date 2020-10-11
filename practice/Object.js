@@ -35,7 +35,7 @@ function greeting(x){
 function freeShipping(x){
     let sum=0;
     let val = Object.values(x);
-    for(let i = 0;i<Object.keys(x).length;i++){
+    for(let i = 0;i<val.length;i++){
         sum+=val[i];
     }
     return sum >= 50.00
