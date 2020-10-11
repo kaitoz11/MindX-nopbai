@@ -42,6 +42,13 @@ function freeShipping(x){
     }
     return sum >= 50.00
 }
+// function freeShipping(x){
+//     let sum=0;
+//     for(item in x){
+//         sum+=x[item];
+//     }
+//     return sum >= 50.00
+// }
 
 //bai 10
 const rate = {
