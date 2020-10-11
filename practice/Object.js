@@ -40,3 +40,13 @@ function freeShipping(x){
     }
     return sum >= 50.00
 }
+
+//bai 10
+const rate = {
+	people: 4,
+	walls: 9,
+	minutes: 63 
+}
+function time(rate,people,walls){
+    return (rate.people*rate.minutes*walls)/(rate.walls*people)
+}
