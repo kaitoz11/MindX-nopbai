@@ -31,15 +31,11 @@ function Saler(){
             console.log(read2(items));
         }else if(ans.toUpperCase() == "U"){
             pos = parseInt(prompt("Update position?"))-1;
-            let temp = items;
             items[pos] = prompt("New item?");
-            for(let a=pos;a<items.length;i++){
-                items.push(temp[a])
-            }
             console.log(read2(items));
         }else if(ans.toUpperCase() == "D"){
             pos = parseInt(prompt("Update position?"))-1;
-            for(let a=pos;a<items.length-2;i++){
+            for(let a=pos;a<items.length-1;i++){
                 item[a]=item[a+1]
             }
             console.log(read2(items));
