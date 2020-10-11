@@ -23,12 +23,14 @@ function greeting(x){
         Wendy: "Japan",
         Norman: "England",
         Sam: "Argentina"
-    }
+    };
+    let result;
     if(GUEST_LIST[x] != undefined){
-        console.log("Hi! I'm "+x+", and I'm from "+GUEST_LIST[x]+".")
+        result = "Hi! I'm "+x+", and I'm from "+GUEST_LIST[x]+"."
     }else{
-        console.log("Hi! I'm a guest.")
+        result = "Hi! I'm a guest."
     }
+    return result
 }
 
 //bai 9
