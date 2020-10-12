@@ -13,7 +13,10 @@ Pokemon.unshift("Meowtwo");
 function read2(x){
     let show=[]
     for(let i=0;i<x.length;i++){
-        show+=x[i]+", ";
+        show+=x[i];
+        if(i!=x.length-1){
+            show+=", ";
+        }
     }
     console.log("Our items: "+ show)
 }
@@ -34,12 +37,56 @@ function Saler(){
             items[pos] = prompt("New item?");
             console.log(read2(items));
         }else if(ans.toUpperCase() == "D"){
-            pos = parseInt(prompt("Update position?"))-1;
+            pos = parseInt(prompt("Delete position?"))-1;
             for(let a=pos;a<items.length-1;i++){
-                item[a]=item[a+1]
+                items[a]=items[a+1];
             }
+            items.pop();
             console.log(read2(items));
         }else{run=false}
         
     }
+}
+
+//bai 3
+console.log(sockMerchant(9,[10, 20, 20, 10, 10, 30, 50, 10, 20]));
+function sockMerchant(n, arr){
+    arr.sort();
+    let temp=arr[0];
+    let count=0;
+    let result=0;
+    for(let i=0;i<n;i++){
+        if(temp!=arr[i]){
+            result+=parseInt(count/2);
+            count=1;
+            temp=arr[i];
+            if(i==n-1){
+                result+=parseInt(count/2)
+            }
+        }else if(i==n-1){
+            count++
+            result+=parseInt(count/2)
+        }else{
+            count++;
+        }
+    }
+    return result
+}
+
+//bai 4
+console.log(chunk(3,[10, 20, 20, 10, 10, 30, 50, 10, 20]));
+function chunk(n,arr){
+    let result = [];
+    let temp = [];
+    let count=0;
+    for(let i=0;i<arr.length;i++){
+        count++;
+        temp.push(arr[i])
+        if(count==n){
+            result.push(temp);
+            count=0;
+            temp=[]
+        }
+    }
+    return result
 }
