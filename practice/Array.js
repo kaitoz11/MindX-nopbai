@@ -10,21 +10,21 @@ Pokemon.push("Pikachu");
 Pokemon.unshift("Meowtwo");
 
 //bai 2
-function read2(x){
-    let show=[]
-    for(let i=0;i<x.length;i++){
-        show+=x[i];
-        if(i!=x.length-1){
-            show+=", ";
-        }
-    }
-    console.log("Our items: "+ show)
-}
 function Saler(){
     let items = ["T-Shirt","Sweater"];
     let pos;
     let ans="";
     let run = true
+    let read2 = function(x){
+        let show=[]
+        for(let i=0;i<x.length;i++){
+            show+=x[i];
+            if(i!=x.length-1){
+                show+=", ";
+            }
+        }
+        console.log("Our items: "+ show)
+    }
     while(run==true){
         ans = prompt("Welcome to our shop, what do you want (C, R, U, D)?");
         if(ans.toUpperCase() == "R"){
@@ -92,16 +92,16 @@ function chunk(n,arr){
 }
 
 //bai 5
-function unique(arr, value){
-    for(let n=0;n<arr.length;n++){
-        if(value == arr[n]){
-            return false
-        }
-    }
-    return true
-}
 console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 function difference(arr1, arr2) {
+    let unique = function(arr, value){
+        for(let n=0;n<arr.length;n++){
+            if(value == arr[n]){
+                return false
+            }
+        }
+        return true
+    }
     let arr=[];
     arr1 =arr1.concat(arr2);
     for(let i=0;i<arr1.length;i++){
@@ -110,4 +110,20 @@ function difference(arr1, arr2) {
         }
     }
     return arr;
+}
+
+//bai 6
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+function diffArray(arr1, arr2) {
+    let search = function(a1,a2){
+        let result=[];
+        for(let i=0;i<a1.length;i++) {
+            if(!a2.includes(a1[i])) {
+                result.push(a1[i]);
+            }
+        }
+        return result
+    }
+    let newArr = search(arr1,arr2).concat(search(arr2,arr1));
+    return newArr;
 }
