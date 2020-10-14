@@ -90,3 +90,24 @@ function chunk(n,arr){
     }
     return result
 }
+
+//bai 5
+function unique(arr, value){
+    for(let n=0;n<arr.length;n++){
+        if(value == arr[n]){
+            return false
+        }
+    }
+    return true
+}
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+function difference(arr1, arr2) {
+    let arr=[];
+    arr1 =arr1.concat(arr2);
+    for(let i=0;i<arr1.length;i++){
+        if(unique(arr,arr1[i])){
+            arr.push(arr1[i])
+        }
+    }
+    return arr;
+}
