@@ -127,3 +127,45 @@ function diffArray(arr1, arr2) {
     let newArr = search(arr1,arr2).concat(search(arr2,arr1));
     return newArr;
 }
+
+//bai 7
+function pairElement(str){
+    str = str.toUpperCase();
+    let result=[];
+    for(let i = 0; i<str.length;i++){
+        if(str[i] == "C"){result.push("G")}
+        if(str[i] == "G"){result.push("C")}
+        if(str[i] == "A"){result.push("T")}
+        if(str[i] == "T"){result.push("A")}
+    }
+    return result.join("");
+}
+
+//bai 8
+function tuckIn(arr1 , arr2){
+    arr2.push(arr1[1]);
+    arr2.unshift(arr1[0]);
+    return arr2
+}
+
+//bai 9
+function getOnlyEvens(arr){
+    let result=[];
+    for(let i=0;i<arr.length;i+=2){
+        if(arr[i]%2==0){
+            result.push(arr[i])
+        }
+    }
+    return result
+}
+
+//bai 10
+function set(arr){
+    let result=[];
+    for(i=0;i<arr.length;i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    return result.sort((a ,b) => a-b)
+}
