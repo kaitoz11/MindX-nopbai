@@ -1,1 +1,35 @@
+body{
+    margin: 0px;
+}
 
+.nav{
+    background-color: orangered;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    color: white;
+    margin-bottom: 30px;
+}
+.nav-top{
+    padding: 0px 70px;
+    display: flex;
+    height: 30px;
+    width: 1200px;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nfront{
+    width: 280px;
+}
+.nback{
+    width: 350px;
+    justify-content: space-between;
+    
+}
+.nback div{
+    padding: 5px 10px;
+}
