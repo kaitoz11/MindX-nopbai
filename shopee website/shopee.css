@@ -9,12 +9,12 @@ body{
     display: flex;
     color: white;
     margin-bottom: 30px;
+    flex-direction: column;
 }
 .nav-top{
-    padding: 0px 70px;
+    padding: 0px 10%;
     display: flex;
     height: 30px;
-    width: 1200px;
     justify-content: space-between;
 }
 .options{
@@ -32,4 +32,22 @@ body{
 }
 .nback div{
     padding: 5px 10px;
+}
+.nav-bot{
+    padding: 20px 10%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+}
+.searchbar-input{
+    
+}
+.mid-bar{
+    width: 80%;
+    
 }
