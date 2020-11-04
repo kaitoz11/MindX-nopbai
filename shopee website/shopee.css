@@ -1,7 +1,11 @@
+a{
+    text-decoration: none;
+    color: white;
+}
 body{
     margin: 0px;
+    background-color: aliceblue;
 }
-
 .nav{
     background-color: orangered;
     height: 120px;
@@ -12,7 +16,6 @@ body{
     flex-direction: column;
 }
 .nav-top{
-    padding: 0px 10%;
     display: flex;
     height: 30px;
     justify-content: space-between;
@@ -34,7 +37,7 @@ body{
     padding: 5px 10px;
 }
 .nav-bot{
-    padding: 20px 10%;
+    padding: 20px;
 }
 .container{
     display: flex;
@@ -43,11 +46,66 @@ body{
 .searchbar{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    background-color: white;
+    border-radius: 3px;
+}
+.searchbar form{
+    width: 600px;
+    padding-left: 10px;
 }
 .searchbar-input{
-    
+    height: 38px;
+    width: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
 }
 .mid-bar{
-    width: 80%;
-    
+    width: 750px;
+}
+.contain{
+    margin: 0 auto;
+    width: 1200px;
+}
+.inside{
+    display: flex;
+    flex-direction: row;
+}
+.filter{
+    margin-right: 20px;
+    width: 190px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+}
+.category-item, .filter-title{
+    color: black;
+}
+.product{
+    width: 100%;
+}
+.sort{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230, 230, 230);
+    padding: 13px 20px;
+}
+.sort-options{
+    width: 734px;
+    display: flex;
+    flex-direction: row;
+}
+.sort-options div{
+    margin-left: 10px;
+    padding: 0 15px;
+}
+.page-controller{
+    display: flex;
+    flex-direction: row;
+}
+.page-display{
+    padding-right: 10px;
 }
