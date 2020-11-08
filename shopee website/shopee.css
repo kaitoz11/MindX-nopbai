@@ -109,3 +109,42 @@ body{
 .page-display{
     padding-right: 10px;
 }
+.products{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 5px 0;
+    width: 20%;
+}
+.product-box{
+    background-color: white;
+}
+.prd-image{
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+.prd-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.prd-name{
+    color: black;
+    margin-bottom: 15px;
+}
+.prd-info{
+    padding: 10px;
+}
+.prd-price{
+    color: tomato;
+    text-align: end;
+}
