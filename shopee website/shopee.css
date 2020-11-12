@@ -101,6 +101,7 @@ body{
 .sort-options div{
     margin-left: 10px;
     padding: 0 15px;
+    background-color: white;
 }
 .page-controller{
     display: flex;
