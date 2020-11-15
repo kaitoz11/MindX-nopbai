@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+.nav{
+    height: 84px;
+    display: flex;
+    align-items: center;
+}
+.nav div{
+    width: 1200px;
+    margin: 0px auto;
+}
+.tt{
+    font-size: 30px;
+    font-weight: 700;
+}
+.form-contain{
+    background-color: orangered;
+    height: 600px;
+}
+.form-insider{
+    margin: 0 auto;
+    width: 1040px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.form{
+    background-color: whitesmoke;
+    width: 500px;
+    height: 70%;
+}
+.form-title{
+    padding: 30px 40px;
+}
+.inp-holder{
+    padding: 0 40px;
+}
+.input{
+    margin-bottom: 30px;
+    height: 40px;
+    border: 1px solid grey;
+    background-color: white;
+}
+input{
+    width: 85%;
+    border: none;
+    padding: 10px 20px;
+}
+.submit{
+    
+}
