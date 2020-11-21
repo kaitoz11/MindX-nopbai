@@ -1,12 +1,22 @@
 a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 body{
     margin: 0px;
     background-color: aliceblue;
 }
-.nav{
+.a1{
+    text-decoration: none;
+    color: tomato;
+}
+.a1:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+.nav1{
     background-color: orangered;
     height: 120px;
     width: 100%;
@@ -29,7 +39,7 @@ body{
     width: 280px;
 }
 .nback{
-    width: 350px;
+    width: 250px;
     justify-content: space-between;
 }
 .nav-text:hover{
@@ -142,10 +152,14 @@ body{
 .product-box{
     background-color: white;
 }
+.product-box:hover{
+    border: 1px solid black;
+}
 .prd-image{
     width: 100%;
     padding-top: 100%;
     position: relative;
+    border: 1px solid rgb(196, 196, 196);
 }
 .prd-image img{
     position: absolute;
@@ -169,4 +183,156 @@ body{
 .prd-price{
     color: tomato;
     text-align: end;
+}
+.search-confirm{
+    margin: 2px;
+    border: none;
+    color: white;
+    background-color: orangered;
+}
+.search-confirm:hover{
+    background-color: tomato;
+}
+
+.buying{
+    display: flex;
+    margin-top:  20px;
+    background: white;
+    border: 1px solid grey;
+}
+.buying-pic{
+    min-width: 400px;
+    padding:  15px;   
+}
+
+.buying-info{
+    padding: 20px 35px 0px 25px;
+    width: 100%;
+}
+.buy-name{
+    font-weight: 500;
+    font-size: 25px;
+}
+.buy-ele{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+.label{
+    color: grey;
+    min-width: 130px;
+    font-size: 20px;
+}
+.price{
+    font-size: 25px;
+    color: orangered;
+}
+.amount{
+    display: flex;
+    flex-direction: row;
+}
+.form-num{
+    margin-right: 20px;
+    display: flex;
+}
+.am-btn{
+    border: 1px solid grey;
+    padding: 0 8px 0 8px;
+    background-color: white;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.am-inp{
+    border: 1px solid grey;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+}
+.am-btn:hover{
+    background-color: whitesmoke;
+}
+.pay{
+    margin-top: 45px;
+}
+.add-prd{
+    border: none;
+    width: 200px;
+    height: 40px;
+    color:  white;
+    background-color: tomato;
+    font-size: 16px;
+}
+.add-prd:hover{
+    background-color: darkorange;
+}
+/*form*/
+
+.nav{
+    height: 84px;
+    display: flex;
+    align-items: center;
+}
+.aaa{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.tt{
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.form-contain{
+    background-color: orangered;
+    height: 600px;
+}
+.form-insider{
+    margin: 0 auto;
+    width: 1040px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#form{
+    background-color: whitesmoke;
+    width: 500px;
+    height: 70%;
+}
+.form-title{
+    padding: 30px 40px;
+}
+.inp-holder{
+    padding: 0 40px;
+}
+.input{
+    margin-bottom: 30px;
+    height: 40px;
+    border: 1px solid grey;
+    background-color: white;
+}
+.input1{
+    width: 90%;
+    border: none;
+    padding: 12px 21px;
+}
+.submit{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    color: whitesmoke;
+    background-color: tomato;
+}
+.submit:hover{
+    background-color: darkorange;
+}
+.bot{
+    margin-top: 50px;
+    padding: 0 40px;
+    text-align: center;
 }
