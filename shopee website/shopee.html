@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="shopee.css">
 </head>
 <body>
-    <div class="main">
-        <div class="nav">
+    <div class="main" id="main">
+        <div class="nav1">
             <div class="nav-top contain">
                 <div class="options nfront">
                     <a href="#" class="nav-text">Kênh Người Bán</a>
@@ -18,13 +18,12 @@
                 <div class="options nback">
                     <div class="nav-text">Thông Báo</div>
                     <div class="nav-text">Trợ Giúp</div>
-                    <div class="nav-text">Đăng Ký</div>
-                    <div class="nav-text">Đăng Nhập</div>
+                    <a class="nav-text" onclick="toForm()">Đăng Nhập</a>
                 </div>
             </div>
             <div class="nav-bot contain">
                 <div class="container">
-                    <a href="#">*LOGO*</a>
+                    <a onclick="main()">*LOGO*</a>
                     <div class="mid-bar">
                         <div class="searchbar">
                             <form>
@@ -37,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="contain">
+        <div class="contain" id="contain">
             <div class="banner"></div>
             <div class="brands"></div>
             <div class="inside">
@@ -70,31 +69,18 @@
                         </div>
                         <div class="page-controller">
                             <div id="page-display">1/100</div>
-                            <button onclick="rendering(false)"><</button>
-                            <button onclick="rendering(true)">></button>
+                            <button class="page-adj" onclick="rendering(false)"><</button>
+                            <button class="page-adj" onclick="rendering(true)">></button>
                         </div>
                     </div>
                     <div class="products" id="pd">
-                        <div class="box">
-                            <div>
-                                <a href="#">
-                                    <div class="product-box">
-                                        <div class="prd-image">
-                                            <img src="#">
-                                        </div>
-                                        <div class="prd-info">
-                                            <div class="prd-name"></div>
-                                            <div class="prd-price"></div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                        <h2>No product</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="data/data.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
