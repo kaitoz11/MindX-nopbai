@@ -120,7 +120,7 @@ function addPRD(id,user){
 function toForm(){
     //to login form
     document.title = "Đăng Nhập - Shopee";
-    document.getElementById("main").innerHTML = '<div class="nav"> <div class="aaa"> <a onclick="main(Logged_in)" class="tt a1">*HOME*</a> <div id="header" class="tt">Đăng nhập</div> </div> </div> <div class="form-contain"> <div class="form-insider"> <div id="form"> <div class="form-title">Đăng Nhập</div> <div class="inp-holder"> <div class="input"> <input class="input1" type="text" id="username" placeholder="Username"> </div> <div class="input"> <input class="input1" type="password" id="password" class="pswd" placeholder="Password"> </div> <button id="btn" class="submit" onclick="Login()">ĐĂNG NHẬP</button> </div> <div class="bot">Bạn chưa có tài khoảng? <a onclick="changeForm(false)" class="a1">Đăng Ký</a></div> </div> </div> </div>';
+    document.getElementById("main").innerHTML = '<div class="nav"> <div class="aaa"> <a onclick="main(Logged_in)" class="tt a1">HOME</a> <div id="header" class="tt">Đăng nhập</div> </div> </div> <div class="form-contain"> <div class="form-insider"> <div id="form"> <div class="form-title">Đăng Nhập</div> <div class="inp-holder"> <div class="input"> <input class="input1" type="text" id="username" placeholder="Username"> </div> <div class="input"> <input class="input1" type="password" id="password" class="pswd" placeholder="Password"> </div> <button id="btn" class="submit" onclick="Login()">ĐĂNG NHẬP</button> </div> <div class="bot">Bạn chưa có tài khoảng? <a onclick="changeForm(false)" class="a1">Đăng Ký</a></div> </div> </div> </div>';
 }
 function Login(){
     let username = document.getElementById("username").value;
